@@ -2,3 +2,8 @@
 
 cd string-search
 ./generate-input
+cd ..
+
+cd primes
+./generate-input
+cd ..

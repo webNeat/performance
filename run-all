@@ -2,3 +2,8 @@
 
 cd string-search
 ./run
+cd ..
+
+cd primes
+./run
+cd ..
