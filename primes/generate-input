@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+const Chance = require('chance')
+const {writeFileSync} = require('fs')
+const config = require('../config.json')
+const {min, max, count} = config['primes']
+
+const chance = new Chance()
+const lines = []
+lines.push(count)
+for (let i = 0; i < count; i++) {
+  lines.push(chance.integer({min, max}))
+}
+
+writeFileSync(__dirname + '/input.txt', lines.join("\n"))

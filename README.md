@@ -27,6 +27,32 @@ Nodejs: 8.053s
 C++: 11.121s
 ```
 
+## Prime numbers
+
+### The goal
+
+The program will read the following from standard input
+- An integer `count` from the first line.
+- `count` integers between `min` and `max` from the next `count` lines.
+Then print how many integer is a prime number.
+
+### Configuration
+```js
+{
+  "count": 1000000,
+  "min": 100000,
+  "max": 900000
+}
+```
+
+### Results
+```
+C++: 1.699s
+Nodejs: 2.961s
+PHP7: 13.062s
+Python3: 47.568s
+```
+
 ## Running the tests yourself
 - You should have a Unix system with `g++`, `python3`, `PHP` and `node` installed.
 - Run `./run-all` script.

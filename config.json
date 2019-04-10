@@ -3,5 +3,10 @@
     "textLength": 1000000,
     "wordsCount": 10000,
     "wordLength": 7
+  },
+  "primes": {
+    "count": 1000000,
+    "min": 100000,
+    "max": 900000
   }
 }
