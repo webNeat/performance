@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+g++ -o main main.cpp
+chmod +x main
+
+echo '---'
+echo 'C++'
+time ./main < input.txt
+echo '---'
+echo 'Python3'
+time python3 main.py < input.txt
+echo '---'
+echo 'PHP7'
+time php main.php < input.txt
+echo '---'
+echo 'Nodejs'
+time node main.js < input.txt

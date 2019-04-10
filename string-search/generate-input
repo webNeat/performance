@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+const Chance = require('chance')
+const {writeFileSync} = require('fs')
+const config = require('../config.json')
+const {textLength, wordLength, wordsCount} = config['string-search']
+
+const chance = new Chance()
+const lines = []
+lines.push(chance.word({length: textLength}))
+lines.push(wordsCount)
+for (let i = 0; i < wordsCount; i++) {
+  lines.push(chance.word({length: wordLength}))
+}
+
+writeFileSync(__dirname + '/input.txt', lines.join("\n"))
