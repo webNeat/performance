@@ -1,11 +1,9 @@
 from math import sqrt
 
 def isPrime(n):
-  i = int(sqrt(n))
-  while i > 1:
+  for i in range(2, int(sqrt(n)) + 1):
     if n % i == 0:
       return False
-    i = i - 1
   return True
 
 found = 0

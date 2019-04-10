@@ -49,8 +49,8 @@ Then print how many integer is a prime number.
 ```
 C++: 1.699s
 Nodejs: 2.961s
+Python3: 7.254s
 PHP7: 13.062s
-Python3: 47.568s
 ```
 
 ## Running the tests yourself
